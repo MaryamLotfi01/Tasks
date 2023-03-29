@@ -1,40 +1,107 @@
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IRANSans/IRANSansWeb.woff") format("woff");
+  src: url("../fonts/IRANSans/IRANSansWeb_UltraLight.woff") format("woff");
+  src: url("../fonts/IRANSans/IRANSansWeb_Light.woff") format("woff");
+  src: url("../fonts/IRANSans/IRANSansWeb_Medium.woff") format("woff");
+  src: url("../fonts/IRANSans/IRANSansWeb_Bold.woff") format("woff");
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "IranSans";
 }
-.navbar-container {
-  height: 4rem;
-  background-color: whitesmoke;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-.navbar {
-  width: 80%;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: #f0f0e9;
+}
+.footer-header {
+  background-color: #3a3a3a;
+  padding: 2rem 0;
+  width: 100%;
+  color: white;
+}
+.footer-header-content {
+  width: 60%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-header-input-container {
+  display: flex;
+}
+.footer-header-input-container input[type="text"] {
+  padding: 0.5rem;
+  outline: none;
+  align-self: stretch;
+  border-radius: 0;
+  border: 0;
+}
+.footer-header-input-container input[type="text"]::placeholder {
+  color: gray;
+}
+.footer-submit-btn {
+  width: 6rem;
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  background-color: #fe980f;
+  border: 0;
+}
+.footer-submit-icon {
+  width: 1.4rem;
+}
+.footer-content-container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.footer-content {
+  flex: 1;
+}
+.footer-content-map {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+.footer-content-map img {
+  flex: 1;
   height: 100%;
+  width: 100%;
+}
+.footer-content p {
+  font-size: 0.8rem;
+  color: gray;
+  text-align: justify;
+}
+.footer-links-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.logo-box {
-  height: 100%;
-  width: 30%;
-}
-.logo-box img {
-  height: 100%;
+  width: 70%;
+  padding: 1rem 0;
 }
 .links-container {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  gap: 1rem;
+  list-style-type: none;
+  list-style-position: inside;
 }
-.links-container a {
-  text-decoration: none;
-  color: #ee1a3d;
-  width: 10rem;
-  text-align: center;
-  padding: 0.5rem 0;
+.links-container * {
+  font-family: "Roboto";
+  color: gray;
 }
-.active-link {
-  border: 1px solid #ee1a3d;
+.links-header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.link-item {
+  margin-top: 0.5rem;
 }
